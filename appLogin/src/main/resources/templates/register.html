@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-900">
+    <form action="/register" method="post" class="w-96 bg-gray-800 text-white p-6 rounded-2xl shadow-xl">
+        <h2 class="text-2xl font-bold text-center mb-6">Cadastro</h2>
+        <div class="space-y-4">
+            <div class="relative">
+                <input 
+                    name="user"
+                    type="text" 
+                    placeholder="Nome" 
+                    class="w-full pl-10 p-2 bg-gray-700 border-none text-white rounded-md focus:ring-2 focus:ring-blue-500">
+                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">👤</span>
+            </div>
+            <div class="relative">
+                <input 
+                    name="email"
+                    type="email" 
+                    placeholder="Email" 
+                    class="w-full pl-10 p-2 bg-gray-700 border-none text-white rounded-md focus:ring-2 focus:ring-blue-500">
+                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">📧</span>
+            </div>
+            <div class="relative">
+                <input 
+                    name="password"
+                    type="password" 
+                    placeholder="Senha" 
+                    class="w-full pl-10 p-2 bg-gray-700 border-none text-white rounded-md focus:ring-2 focus:ring-blue-500">
+                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">🔒</span>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 transition-all p-2 rounded-md">
+                Cadastrar
+            </button>
+            <p class="text-center mt-4 text-gray-400">Já tem uma conta? <a href="login.html" class="text-blue-400 hover:underline">Faça login</a></p>
+        </div>
+    </form>
+</body>
+</html>
